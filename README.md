@@ -53,6 +53,8 @@ Para un estudiante que invierte **17 horas** de estudio semanales ($x=17$):
 
 ## d) Coeficiente de Correlación
 
+![Coeficiente de Correlación](img/formula_correlacion.png)
+
 El **coeficiente de correlación de Pearson ($r$)** es una medida numérica que cuantifica la fuerza y la dirección de la relación lineal entre dos variables. Su valor varía entre -1 y +1.
 
 - **+1**: Correlación lineal positiva perfecta.
