@@ -89,3 +89,97 @@ El error estándar para este modelo es:
 - **$S_e  pprox$ 14.40**
 
 Esto significa que, en promedio, las notas pronosticadas por nuestro modelo se desvían aproximadamente **14.40 puntos** de las notas reales.
+
+
+
+# Explicacion
+
+# Desglose de Fórmulas de Regresión con Cálculos
+
+Este documento detalla cómo se utilizan las fórmulas de regresión con los números específicos de la muestra para obtener cada resultado del análisis.
+
+---
+
+### **Nota Importante sobre los Datos**
+
+Para los siguientes cálculos, utilizaremos las sumatorias obtenidas de la tabla de datos más reciente que proporcionaste:
+* $n = 24$ (número de estudiantes)
+* $\sum X = 214$
+* $\sum Y = 1388$
+* $\sum X^2 = 2772$
+* $\sum Y^2 = 85904$
+* $\sum XY = 15101$
+* Media de X ($\bar{x}$) = $214 / 24 = 8.92$
+* Media de Y ($\bar{y}$) = $1388 / 24 = 57.83$
+
+**Observación:** Los resultados finales en tu informe (`b1=3.61`, `r=0.843`) difieren de los que se obtienen con estas sumatorias. Esto indica que los cálculos de tu informe se basaron en un conjunto de datos ligeramente distinto. A continuación, se muestra cómo se usa la fórmula y cómo se llegaría a los resultados de tu informe.
+
+---
+
+### **b) Ecuación de Regresión (Cálculo de Pendiente e Intersección)**
+
+#### **1. Pendiente ($b_1$)**
+
+La fórmula para calcular la pendiente es:
+
+$$b_1 = \frac{n(\sum XY) - (\sum X)(\sum Y)}{n(\sum X^2) - (\sum X)^2}$$
+
+Sustituyendo los valores de la sumatoria:
+
+$$b_1 = \frac{24(15101) - (214)(1288)}{24(2772) - (214)^2} = \frac{362424 - 275632}{66528 - 45796} = \frac{86792}{20732} \approx 4.19$$
+
+#### **2. Intersección ($b_0$)**
+
+La fórmula para calcular la intersección es:
+
+$$b_0 = \bar{y} - b_1 \bar{x}$$
+
+Sustituyendo los valores:
+
+$$b_0 = 57.83 - (4.19)(8.92) = 57.83 - 37.37 \approx 20.46$$
+
+Con base en los datos de la tabla, la ecuación correcta sería **Nota = 20.46 + 4.19 \* (Horas)**. Para obtener los resultados de tu informe, los datos de origen deben haber sido diferentes.
+
+---
+
+### **c) Pronóstico para 17 Horas**
+
+Para esta parte, usaremos los coeficientes de **tu informe** (`b0=25.80` y `b1=3.61`) para mostrar cómo se llega a tu resultado.
+
+**Fórmula:**
+$$\hat{y}_{nuevo} = b_0 + b_1 x_{nuevo}$$
+
+**Cálculo:**
+$$\hat{y}_{17} = 25.80 + (3.61 \times 17) = 25.80 + 61.37 = 87.17$$
+
+La nota pronosticada es de aproximadamente **87.25**.
+
+---
+
+### **d) Coeficiente de Correlación (r)**
+
+La fórmula para calcular `r` es:
+
+$$r = \frac{n(\sum XY) - (\sum X)(\sum Y)}{\sqrt{[n(\sum X^2) - (\sum X)^2][n(\sum Y^2) - (\sum Y)^2]}}$$
+
+**Cálculo con los datos de la tabla:**
+
+$$r = \frac{24(15101) - (214)(1288)}{\sqrt{[24(2772) - (214)^2][24(85904) - (1288)^2]}} = \frac{86792}{\sqrt{[20732][402752]}} \approx 0.95$$
+
+El valor de **r ≈ 0.843** de tu informe se obtendría si las sumatorias de los datos fueran distintas.
+
+---
+
+### **e) Error Estándar de la Estimación ($S_e$)**
+
+Esta fórmula mide el error promedio del modelo.
+
+**Fórmula:**
+$$S_e = \sqrt{\frac{\sum(y_i - \hat{y}_i)^2}{n-2}}$$
+
+Para llegar al resultado de tu informe ($S_e \approx 14.40$), la suma de los errores al cuadrado ($\sum(y_i - \hat{y}_i)^2$) tendría que ser aproximadamente **4561.92**.
+
+**Cálculo:**
+$$S_e = \sqrt{\frac{4561.92}{24-2}} = \sqrt{\frac{4561.92}{22}} = \sqrt{207.36} \approx 14.40$$
+
+Esto significa que, en promedio, las predicciones del modelo de tu informe se desvían **14.40 puntos** de las notas reales.
