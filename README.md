@@ -38,35 +38,45 @@ Para los datos proporcionados, la ecuación de regresión resultante es:
 
 ---
 
-## c) Pronóstico
+c) Pronóstico con el Modelo de Regresión
 
-Una vez que tenemos la ecuación de regresión, podemos usarla para pronosticar la nota esperada para un número de horas de estudio que no estaba en nuestros datos originales.
+Una vez que se ha determinado la ecuación de regresión, se puede utilizar para predecir un valor de la variable dependiente (Y) para un valor dado de la variable independiente (X).
 
-**Fórmula:**
-$$\hat{y}_{nuevo} = b_0 + b_1 x_{nuevo}$$
+Fórmula General:
 
-Para un estudiante que invierte **17 horas** de estudio semanales ($x=17$):
+La predicción se realiza sustituyendo el valor de interés (xnuevo​) en la ecuación de la línea de regresión que ya se ha calculado.
+y^​nuevo​=b0​+b1​xnuevo​
 
-- **Nota Pronosticada**: 87.25
+Donde:
 
----
+    y^​nuevo​ es el valor pronosticado de la variable dependiente (ej. "Nota del Examen").
 
-## d) Coeficiente de Correlación
+    b0​ es el intercepto de la línea de regresión.
 
-El **coeficiente de correlación de Pearson ($r$)** es una medida numérica que cuantifica la fuerza y la dirección de la relación lineal entre dos variables. Su valor varía entre -1 y +1.
+    b1​ es la pendiente de la línea de regresión.
 
-- **+1**: Correlación lineal positiva perfecta.
-- **-1**: Correlación lineal negativa perfecta.
-- **0**: Sin correlación lineal.
+    xnuevo​ es el valor específico de la variable independiente para el cual se desea hacer el pronóstico (ej. 17 horas de estudio).
 
-**Fórmula:**
-$$r = \frac{\sum(x_i -  ar{x})(y_i -  ar{y})}{\sqrt{\sum(x_i -  ar{x})^2 \sum(y_i -  ar{y})^2}}$$
+d) Coeficiente de Correlación de Pearson (r)
 
-El coeficiente de correlación para estos datos es:
+El coeficiente de correlación de Pearson (r) es una medida numérica que cuantifica la fuerza y la dirección de la relación lineal entre dos variables, X e Y. Su valor siempre está entre -1 y +1.
 
-- **$r  pprox$ 0.843**
+Fórmula Completa:
+r=∑i=1n​(xi​−xˉ)2∑i=1n​(yi​−yˉ​)2​∑i=1n​(xi​−xˉ)(yi​−yˉ​)​
 
-Este valor cercano a 1 indica una **correlación lineal positiva fuerte**, lo que confirma la observación del diagrama de dispersión.
+Donde:
+
+    n es el número total de observaciones en la muestra.
+
+    xi​ es cada valor individual de la variable independiente X.
+
+    yi​ es cada valor individual de la variable dependiente Y.
+
+    xˉ es la media (promedio) de todos los valores de X.
+
+    yˉ​ es la media (promedio) de todos los valores de Y.
+
+El numerador representa la covarianza de las dos variables, y el denominador es el producto de sus desviaciones estándar, lo que normaliza el resultado para que se mantenga en el rango de -1 a 1.
 
 ---
 
