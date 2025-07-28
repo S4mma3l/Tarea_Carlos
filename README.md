@@ -14,7 +14,7 @@ Un diagrama de dispersión es una herramienta gráfica que nos permite visualiza
 
 ## b) Ecuación de Regresión
 
-![Ecuación de regresión](img/ecuacion de regresion.png)
+![Ecuación de Regresión](<img/ecuacion de regresion.png>)
 
 El objetivo es encontrar la línea recta que mejor se ajuste a los datos. Esta línea, llamada línea de regresión, se describe con la siguiente ecuación:
 
