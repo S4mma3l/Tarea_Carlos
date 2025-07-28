@@ -6,7 +6,7 @@ Este documento detalla el análisis de regresión lineal realizado para determin
 
 Un diagrama de dispersión es una herramienta gráfica que nos permite visualizar la relación entre dos variables cuantitativas. Cada punto en el gráfico representa un par de valores (en este caso, horas de estudio y nota del examen para un estudiante).
 
-![Diagrama de Dispersión con Datos Reales](diagrama_dispersion_real.png)
+![Diagrama de Dispersión con Datos Reales](img/figura_1.png)
 
 **Observación:** El gráfico muestra una tendencia positiva. A medida que las horas de estudio aumentan, las notas del examen tienden a ser más altas, lo que sugiere una **relación lineal positiva**.
 
